@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -15,25 +16,67 @@
 
         <nav>
 
-            <video width="100%" height="100%" autoplay loop  >
+            <video width="100%" height="100%" autoplay loop playsinline controls >
                 <source src="./assets/videos/myVideo.mp4" type="video/mp4">
               
               </video>
+              <div class="elementor-background-overlay"></div>
 
                 <div class="navContent">
                     
               <div>
-                <img src="https://kit.baliniz.com/luxetta/wp-content/uploads/sites/44/2022/10/logo-luxetta.png" width="30%" alt="">
+                <img src="https://kit.baliniz.com/luxetta/wp-content/uploads/sites/44/2022/10/logo-luxetta.png" width="50%" alt="">
               </div>
               
             <div>
                 <ul class="navMenu">
-                   <li>HOME</li>
-                   <li>ROOM</li>
-                   <li>OFFERS</li>
-                   <li>PAGES</li>
-                   <li>BLOG</li>
-                   <li>CONTACT</li>
+                   <li><a href="">HOME</a></li>
+
+                   <div class="room">
+                    <li>
+                      <a href="">ROOM</a>
+                      <i class="fa-solid fa-caret-down"></i>
+                    </li>
+                    <div class="roomMenu">
+                      <p class="roomP">OUR ROOM</p>
+                      <p  class="roomP">SINGLE ROOM</p>
+
+                    </div>
+
+                   </div>
+                  
+                   <li><a href="">OFFERS</a></li>
+
+                   <div class="pages">
+                    <li>
+                      <a href="">PAGES</a>
+                      <i class="fa-solid fa-caret-down"></i>
+                    </li>
+                    <div class="pagesMenu">
+                      <p class="pagesP">ABOUT AS</p>
+                      <p class="pagesP">FAQ</p>
+                      <p class="pagesP">404</p>
+
+                    </div>
+
+                   </div>
+
+                   <div class="blog">
+                    <li>
+                      <a href="">BLOG</a>
+                      <i class="fa-solid fa-caret-down"></i>
+                    </li>
+                    <div class="blogMenu">
+                      <p class="blogP">BLOG </p>
+                      <p class="blogP">SINGLE BLOG</p>
+
+
+                    </div>
+
+                   </div>
+                 
+                   
+                   <li><a href="">CONTACT</a></li>
                    <li> <button class="myBtn">BOOK NOW</button></li>
 
                 </ul>

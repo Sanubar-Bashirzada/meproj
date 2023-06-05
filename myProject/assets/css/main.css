@@ -18,23 +18,136 @@ header nav .navContent {
   width: 80%;
   position: absolute;
   top: 0;
+  margin-top: 20px;
 }
 header nav .navContent .navMenu {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
 }
 header nav .navContent .navMenu li {
   list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+header nav .navContent .navMenu li i {
   color: white;
 }
 header nav .navContent .navMenu a {
   text-decoration: none;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+header nav .navContent .navMenu a:hover {
+  border-width: 0px 0px 1px 0px;
+  color: #BD9035;
+  border-style: solid;
+  border-color: #BD9035;
 }
 header nav .navContent .navMenu .myBtn {
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+header nav .navContent .navMenu .myBtn:hover {
+  background-color: white;
+  color: black;
+}
+header nav .navContent .navMenu .room {
+  transition: 600ms;
+}
+header nav .navContent .navMenu .room:hover .roomMenu {
+  display: block !important;
+}
+header nav .navContent .navMenu .room:hover i {
+  color: #BD9035;
+}
+header nav .navContent .navMenu .room .roomMenu {
+  position: absolute;
+  text-align: start;
+  padding: 30px 35px 30px 10px;
+  background-color: white;
+  display: none !important;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header nav .navContent .navMenu .room .roomMenu .roomP {
+  transition: 200ms;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+header nav .navContent .navMenu .pages {
+  transition: 600ms;
+}
+header nav .navContent .navMenu .pages:hover .pagesMenu {
+  display: block !important;
+}
+header nav .navContent .navMenu .pages:hover i {
+  color: #BD9035;
+}
+header nav .navContent .navMenu .pages .pagesMenu {
+  position: absolute;
+  text-align: start;
+  padding: 30px 55px 30px 10px;
+  background-color: white;
+  display: none !important;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+header nav .navContent .navMenu .pages .pagesMenu .pagesP {
+  transition: 200ms;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+header nav .navContent .navMenu .blog {
+  transition: 600ms;
+}
+header nav .navContent .navMenu .blog:hover .blogMenu {
+  display: block !important;
+}
+header nav .navContent .navMenu .blog:hover i {
+  color: #BD9035;
+}
+header nav .navContent .navMenu .blog .blogMenu {
+  position: absolute;
+  text-align: start;
+  padding: 30px 55px 30px 10px;
+  background-color: white;
+  display: none !important;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+header nav .navContent .navMenu .blog .blogMenu .blogP {
+  transition: 200ms;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+header nav .elementor-background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 71%);
+  opacity: 1;
+  transition: background-color 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 * {

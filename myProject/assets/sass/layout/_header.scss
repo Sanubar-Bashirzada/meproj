@@ -1,0 +1,50 @@
+header{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+      
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .navContent{
+            display: flex;
+            width: 80%;
+            position: absolute;
+            top: 0;
+
+            .navMenu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+             
+               
+                li{
+                    list-style-type: none;
+                    color: white;
+                   
+                }
+                a{
+                    text-decoration: none;
+                }
+                .myBtn{
+                    width: 100px;
+                    height: 30px;
+                  
+                 
+                  
+                }
+            }
+    
+        }
+
+    }
+   
+   
+}

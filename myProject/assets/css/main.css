@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+header nav .navContent {
+  display: flex;
+  width: 80%;
+  position: absolute;
+  top: 0;
+}
+header nav .navContent .navMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+header nav .navContent .navMenu li {
+  list-style-type: none;
+  color: white;
+}
+header nav .navContent .navMenu a {
+  text-decoration: none;
+}
+header nav .navContent .navMenu .myBtn {
+  width: 100px;
+  height: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */

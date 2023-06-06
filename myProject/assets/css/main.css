@@ -160,6 +160,9 @@ header #responsive {
   background-color: white;
   transform: translateX(1500px);
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 header #responsive.addResp {
   transform: translateX(0px);
@@ -183,7 +186,6 @@ header #bar {
   padding: 30px 35px 30px 10px;
   background-color: white;
   display: none !important;
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -212,7 +214,6 @@ header #bar {
   padding: 30px 55px 30px 10px;
   background-color: white;
   display: none !important;
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -240,7 +241,6 @@ header #bar {
   padding: 30px 55px 30px 10px;
   background-color: white;
   display: none !important;
-  margin-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 15px;

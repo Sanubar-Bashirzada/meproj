@@ -21,6 +21,7 @@ header nav .navContent {
   margin-top: 20px;
 }
 header nav .navContent .navMenu {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,9 +150,157 @@ header nav .elementor-background-overlay {
   left: 0;
   position: absolute;
 }
+header #responsive {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  transition: 600ms;
+  z-index: 7;
+  background-color: white;
+  transform: translateX(1500px);
+  border: 1px solid black;
+}
+header #responsive.addResp {
+  transform: translateX(0px);
+}
+header #bar {
+  display: none;
+}
+
+.room {
+  transition: 600ms;
+}
+.room:hover .roomMenu {
+  display: block !important;
+}
+.room:hover i {
+  color: #BD9035;
+}
+.room .roomMenu {
+  position: absolute;
+  text-align: start;
+  padding: 30px 35px 30px 10px;
+  background-color: white;
+  display: none !important;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.room .roomMenu .roomP {
+  transition: 200ms;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #000000;
+}
+
+.pages {
+  transition: 600ms;
+}
+.pages:hover .pagesMenu {
+  display: block !important;
+}
+.pages:hover i {
+  color: #BD9035;
+}
+.pages .pagesMenu {
+  position: absolute;
+  text-align: start;
+  padding: 30px 55px 30px 10px;
+  background-color: white;
+  display: none !important;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.pages .pagesMenu .pagesP {
+  transition: 200ms;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.blog {
+  transition: 600ms;
+}
+.blog:hover .blogMenu {
+  display: block !important;
+}
+.blog:hover i {
+  color: #BD9035;
+}
+.blog .blogMenu {
+  position: absolute;
+  text-align: start;
+  padding: 30px 55px 30px 10px;
+  background-color: white;
+  display: none !important;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.blog .blogMenu .blogP {
+  transition: 200ms;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.flx {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.flx .fa-times {
+  color: white;
+  background-color: #BD9035;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #navmenu {
+    display: none !important;
+  }
+  #bar {
+    display: block !important;
+    color: white;
+    font-size: 35px;
+  }
+}
+section {
+  height: 30vh;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */

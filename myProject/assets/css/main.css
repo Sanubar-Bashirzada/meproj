@@ -150,6 +150,20 @@ header nav .elementor-background-overlay {
   left: 0;
   position: absolute;
 }
+header .text {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+header .text .ubud {
+  font-size: 24px;
+  color: white;
+}
+header .text .luxury {
+  font-size: 80px;
+  color: white;
+  font-weight: 600;
+}
 header #responsive {
   width: 100%;
   height: 100%;
@@ -291,8 +305,58 @@ a {
     font-size: 35px;
   }
 }
-section {
-  height: 30vh;
+.roomContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.roomContainer .threecars {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.roomContainer .threecars .check {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.roomContainer #cards {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.box1 {
+  width: 400px;
+  height: 450px;
+  border: 1px solid black;
+}
+
+.flxdiv {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.bigP {
+  font-size: 35px;
+}
+
+.littleP {
+  font-size: 18px;
 }
 
 * {

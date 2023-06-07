@@ -1,3 +1,53 @@
-section{
-    height: 30vh;
+.roomContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    .threecars{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .check{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+    }
+    #cards{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+       
+    }
+}
+//js classlari
+.box1{
+    width: 400px;
+    height: 450px;
+    border: 1px solid black;
+    
+}
+.flxdiv{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+.bigP{
+    font-size: 35px;
+}
+.littleP{
+    font-size: 18px;
 }

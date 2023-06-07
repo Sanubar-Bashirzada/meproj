@@ -1,0 +1,23 @@
+{
+    "write": [
+      { 
+        "id": 1,
+        "money": "$85 / NIGHT",
+        "room": "Standard Room",
+        "img" : "https://kit.baliniz.com/luxetta/wp-content/uploads…bedroom-suite-in-hotel-with-tv-e1667343687749.jpg"
+        
+     },
+     { 
+        "id": 2,
+        "money": "$199 / NIGHT",
+        "room": "Family Room",
+        "img":"https://kit.baliniz.com/luxetta/wp-content/uploads…droom-suite-in-hotel-with-tv-1-e1667343722372.jpg"
+     },
+     { 
+        "id": 3,
+        "money": "$240 / NIGHT",
+        "room": "Double Room",
+        "img":"https://kit.baliniz.com/luxetta/wp-content/uploads…droom-suite-in-hotel-with-tv-1-e1667343722372.jpg"
+     }
+    ]
+  }

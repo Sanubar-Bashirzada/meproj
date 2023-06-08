@@ -1,0 +1,59 @@
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    
+    .footerDiv{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+       
+
+        .oneBox{
+            display: flex;
+            justify-content: space-between;
+        }
+        .subsBox{
+            display: flex;
+            flex-direction: column;
+        }
+        .inputBtn{
+            display: flex;
+        }
+        .footLine{
+            width: 100%;
+            height: 2px;
+            background-color: black;
+        }
+        .twoBox{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .condactDiv{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .fourBox{
+            display: flex;
+           justify-content: space-between;
+            width: 100%;
+            .iconFoot{
+                display: flex;
+                gap: 30px;
+                .iconP{
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+            .sosialFoot{
+                display: flex;
+                gap: 40px;
+
+            }
+        }
+    }
+}

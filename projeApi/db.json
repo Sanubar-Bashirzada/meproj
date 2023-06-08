@@ -4,20 +4,20 @@
         "id": 1,
         "money": "$85 / NIGHT",
         "room": "Standard Room",
-        "img" : "https://images.pexels.com/photos/4906522/pexels-photo-4906522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "img" : "./assets/imgs/1img.jpg"
         
      },
      { 
         "id": 2,
         "money": "$199 / NIGHT",
         "room": "Family Room",
-        "img":"https://images.pexels.com/photos/4906522/pexels-photo-4906522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "img":"./assets/imgs/2img.jpg"
      },
      { 
         "id": 3,        
         "money": "$240 / NIGHT",
         "room": "Double Room",
-        "img":"https://images.pexels.com/photos/4906522/pexels-photo-4906522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "img":"./assets/imgs/3img.jpg"
      }
     ]
   }

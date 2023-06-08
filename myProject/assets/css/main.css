@@ -58,87 +58,6 @@ header nav .navContent .navMenu .myBtn:hover {
   background-color: white;
   color: black;
 }
-header nav .navContent .navMenu .room {
-  transition: 600ms;
-}
-header nav .navContent .navMenu .room:hover .roomMenu {
-  display: block !important;
-}
-header nav .navContent .navMenu .room:hover i {
-  color: #BD9035;
-}
-header nav .navContent .navMenu .room .roomMenu {
-  position: absolute;
-  text-align: start;
-  padding: 30px 35px 30px 10px;
-  background-color: white;
-  display: none !important;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-header nav .navContent .navMenu .room .roomMenu .roomP {
-  transition: 200ms;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-header nav .navContent .navMenu .pages {
-  transition: 600ms;
-}
-header nav .navContent .navMenu .pages:hover .pagesMenu {
-  display: block !important;
-}
-header nav .navContent .navMenu .pages:hover i {
-  color: #BD9035;
-}
-header nav .navContent .navMenu .pages .pagesMenu {
-  position: absolute;
-  text-align: start;
-  padding: 30px 55px 30px 10px;
-  background-color: white;
-  display: none !important;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-header nav .navContent .navMenu .pages .pagesMenu .pagesP {
-  transition: 200ms;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-header nav .navContent .navMenu .blog {
-  transition: 600ms;
-}
-header nav .navContent .navMenu .blog:hover .blogMenu {
-  display: block !important;
-}
-header nav .navContent .navMenu .blog:hover i {
-  color: #BD9035;
-}
-header nav .navContent .navMenu .blog .blogMenu {
-  position: absolute;
-  text-align: start;
-  padding: 30px 55px 30px 10px;
-  background-color: white;
-  display: none !important;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-header nav .navContent .navMenu .blog .blogMenu .blogP {
-  transition: 200ms;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
 header nav .elementor-background-overlay {
   background-color: transparent;
   background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 71%);
@@ -185,88 +104,6 @@ header #bar {
   display: none;
 }
 
-.room {
-  transition: 600ms;
-}
-.room:hover .roomMenu {
-  display: block !important;
-}
-.room:hover i {
-  color: #BD9035;
-}
-.room .roomMenu {
-  position: absolute;
-  text-align: start;
-  padding: 30px 35px 30px 10px;
-  background-color: white;
-  display: none !important;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.room .roomMenu .roomP {
-  transition: 200ms;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  color: #000000;
-}
-
-.pages {
-  transition: 600ms;
-}
-.pages:hover .pagesMenu {
-  display: block !important;
-}
-.pages:hover i {
-  color: #BD9035;
-}
-.pages .pagesMenu {
-  position: absolute;
-  text-align: start;
-  padding: 30px 55px 30px 10px;
-  background-color: white;
-  display: none !important;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.pages .pagesMenu .pagesP {
-  transition: 200ms;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.blog {
-  transition: 600ms;
-}
-.blog:hover .blogMenu {
-  display: block !important;
-}
-.blog:hover i {
-  color: #BD9035;
-}
-.blog .blogMenu {
-  position: absolute;
-  text-align: start;
-  padding: 30px 55px 30px 10px;
-  background-color: white;
-  display: none !important;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.blog .blogMenu .blogP {
-  transition: 200ms;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
 li {
   list-style-type: none;
   display: flex;
@@ -311,11 +148,15 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  margin-top: 100px;
+  color: white;
+  background-color: black;
 }
 footer .footerDiv {
   width: 80%;
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 footer .footerDiv .oneBox {
   display: flex;
@@ -324,14 +165,18 @@ footer .footerDiv .oneBox {
 footer .footerDiv .subsBox {
   display: flex;
   flex-direction: column;
+  gap: 50px;
+  margin-top: 30px;
 }
 footer .footerDiv .inputBtn {
   display: flex;
+  width: 50%;
+  gap: 30px;
 }
 footer .footerDiv .footLine {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
 }
 footer .footerDiv .twoBox {
   display: flex;
@@ -342,6 +187,11 @@ footer .footerDiv .condactDiv {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+footer .footerDiv .threeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 footer .footerDiv .fourBox {
   display: flex;
@@ -367,6 +217,7 @@ footer .footerDiv .fourBox .sosialFoot {
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+  flex-direction: column;
 }
 .roomContainer .threecars {
   width: 80%;
@@ -381,6 +232,19 @@ footer .footerDiv .fourBox .sosialFoot {
   justify-content: space-between;
   margin-top: 20px;
 }
+.roomContainer .threecars .ourRoom {
+  font-size: 40px;
+  color: #bd9035;
+}
+.roomContainer .threecars .checkOur {
+  font-size: 30px;
+}
+.roomContainer .threecars .viewAll {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: #000000;
+}
 .roomContainer #cards {
   margin-top: 30px;
   width: 100%;
@@ -390,11 +254,70 @@ footer .footerDiv .fourBox .sosialFoot {
   position: relative;
   margin-bottom: 100px;
 }
+.roomContainer .sliderimg {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.roomContainer .sliderimg .theImgs {
+  width: 100%;
+  border: 1px solid black;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.roomContainer .sliderimg .theImgs .imgsWrites {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  z-index: 5;
+}
+.roomContainer .sliderimg .theImgs .imgsWrites #swimming {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
+.roomContainer .sliderimg .theImgs .imgsWrites #spa {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
+.roomContainer .sliderimg .theImgs .imgsWrites #sport {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
+.roomContainer .sliderimg .theImgs .imgsWrites #restoran {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
 
 .box1 {
-  width: 400px;
+  width: 33%;
   height: 450px;
   border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 
 .flxdiv {
@@ -405,7 +328,18 @@ footer .footerDiv .fourBox .sosialFoot {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: black;
+  color: white;
+  z-index: 3;
+}
+
+.flxdiv:hover .bigP::after {
+  content: "VIEW DETAILS";
+  display: block;
+  font-size: 15px;
+  color: #bd9035;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #BD9035;
 }
 
 .bigP {
@@ -414,6 +348,18 @@ footer .footerDiv .fourBox .sosialFoot {
 
 .littleP {
   font-size: 18px;
+}
+
+.elementor-background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, #000000 100%);
+  opacity: 0.65;
+  transition: background-color 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 
 * {

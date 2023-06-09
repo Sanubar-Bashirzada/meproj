@@ -68,5 +68,23 @@ footer{
 
             }
         }
+        .fiveBox{
+            display: flex;
+           justify-content: space-between;
+            width: 100%;  
+
+            .rightFoot{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                .lineShort{
+                    width: 2px;
+                    height: 15px;
+                    background-color: white;
+                }
+            }
+        }
     }
 }

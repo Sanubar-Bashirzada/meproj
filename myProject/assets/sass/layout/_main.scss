@@ -78,6 +78,7 @@
                     align-items: center;
                     font-size: 24px;
                     color: white;
+                    transition: 500ms;
                    
 
                 }
@@ -88,6 +89,7 @@
                     align-items: center;
                     font-size: 24px;
                     color: white;
+                  
                 }
                 #sport{
                     width: 25%; 
@@ -95,7 +97,7 @@
                     justify-content: center;
                     align-items: center;
                     font-size: 24px;
-                    color: white;
+                   
                 }
                 #restoran{
                     width: 25%; 
@@ -136,13 +138,14 @@
     background-position: center center;
     position: relative;
     
-
+    // &:hover{
+    
+    // }
     //   transform: translateX(-50%);
      
       
     //   transition: 0.3s ease-out;
 }
-
 
 .flxdiv{
     position: absolute;
@@ -154,6 +157,8 @@
     gap: 20px;
     color: white;
     z-index: 3;
+   
+   
 }
 .flxdiv:hover .bigP::after {
     content: "VIEW DETAILS";
@@ -163,11 +168,10 @@
     border-width: 0px 0px 1px 0px;
     border-style: solid;
     border-color: #BD9035;
-  
-
   }
 .bigP{
     font-size: 35px;
+    
 }
 .littleP{
     font-size: 18px;
@@ -182,5 +186,7 @@
     top: 0;
     left: 0;
     position: absolute;
-  
 }
+
+
+

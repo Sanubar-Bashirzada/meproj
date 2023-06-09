@@ -210,6 +210,22 @@ footer .footerDiv .fourBox .sosialFoot {
   display: flex;
   gap: 40px;
 }
+footer .footerDiv .fiveBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .footerDiv .fiveBox .rightFoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer .footerDiv .fiveBox .rightFoot .lineShort {
+  width: 2px;
+  height: 15px;
+  background-color: white;
+}
 
 .roomContainer {
   width: 100%;
@@ -284,6 +300,7 @@ footer .footerDiv .fourBox .sosialFoot {
   align-items: center;
   font-size: 24px;
   color: white;
+  transition: 500ms;
 }
 .roomContainer .sliderimg .theImgs .imgsWrites #spa {
   width: 25%;
@@ -299,7 +316,6 @@ footer .footerDiv .fourBox .sosialFoot {
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: white;
 }
 .roomContainer .sliderimg .theImgs .imgsWrites #restoran {
   width: 25%;

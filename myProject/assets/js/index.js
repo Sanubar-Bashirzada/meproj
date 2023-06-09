@@ -65,9 +65,10 @@ fetch("http://localhost:3000/write")
     const restoran=document.getElementById("restoran");
     theimg.style.backgroundImage="url('./assets/imgs/swim.jpg')";
 
-    swimming.addEventListener("click",function(){
+    swimming.addEventListener("mousemove",function(){
         theimg.style.backgroundImage="url('./assets/imgs/swim.jpg')";
         swimming.style.height="80px";
+        swimming.style.transition="500ms";
         swimming.style.backgroundColor="white";
         swimming.style.color="black";
         spa.style.color="white";
@@ -83,8 +84,10 @@ fetch("http://localhost:3000/write")
         restoran.style.textAlign="center";
         spa.style.textAlign="center";
     
+
+    
     });
-    spa.addEventListener("click",function(){
+    spa.addEventListener("mousemove",function(){
         theimg.style.backgroundImage="url('./assets/imgs/spa.jpg')";
         spa.style.height="80px";
         spa.style.backgroundColor="white";
@@ -101,9 +104,10 @@ fetch("http://localhost:3000/write")
         swimming.style.color="white";
         sport.style.color="white";
         restoran.style.color="white";
+        spa.style.transition="500ms";
     
     });
-    sport.addEventListener("click",function(){
+    sport.addEventListener("mousemove",function(){
         theimg.style.backgroundImage="url('./assets/imgs/sport.jpg')";
         sport.style.height="80px";
         sport.style.backgroundColor="white";
@@ -120,10 +124,12 @@ fetch("http://localhost:3000/write")
         spa.style.color="white";
         swimming.style.color="white";
         restoran.style.color="white";
+        sport.style.transition="500ms";
+
     
     
     });
-    restoran.addEventListener("click",function(){
+    restoran.addEventListener("mousemove",function(){
         theimg.style.backgroundImage="url('./assets/imgs/restoran.jpg')";
         restoran.style.height="80px";
         restoran.style.backgroundColor="white";
@@ -140,6 +146,12 @@ fetch("http://localhost:3000/write")
         spa.style.color="white";
         sport.style.color="white";
         swimming.style.color="white";
+        restoran.style.transition="500ms";
     
     
     })
+
+
+
+
+   

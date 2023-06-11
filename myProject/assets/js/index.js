@@ -9,6 +9,7 @@ closeBtn.addEventListener("click", function () {
 })
 
 const cards = document.getElementById("cards");
+const offersCards= document.getElementById("offersCards");
 
 fetch("http://localhost:3000/write")
     .then((resp) => resp.json())
@@ -20,7 +21,31 @@ fetch("http://localhost:3000/write")
                 let p2 = document.createElement("p");
                 let flxdiv = document.createElement("div");
                 let opacityDiv=document.createElement("div");
-                // let img = document.createElement("img");
+               //2ci card
+               let card2 = document.createElement("div");
+                let pOne = document.createElement("p");
+                let pTwo = document.createElement("p");
+                let flxdiv2 = document.createElement("div");
+
+                flxdiv2.append(pOne,pTwo);
+                card2.append(flxdiv2,opacityDiv);
+                offersCards.append(card2);
+
+                card2.classList.add("box1", "animate__animated","animate__backInUp",);
+                flxdiv2.classList.add("flxdiv");
+                pOne.classList.add("bigP");
+                pTwo.classList.add("littleP");
+                opacityDiv.classList.add("elementor-background-overlay");
+
+                pOne.innerHTML = element.money;
+                pTwo.innerHTML = element.room;
+                
+                card2.style.backgroundImage =`url("${element.img}")`;
+
+
+
+
+            
              
 
                 card1.classList.add("box1", "animate__animated","animate__backInUp",);
@@ -34,8 +59,6 @@ fetch("http://localhost:3000/write")
                 p1.innerHTML = element.money;
                 p2.innerHTML = element.room;
 
-                // img.src=element.img;
-
                 card1.style.backgroundImage =`url("${element.img}")`;
 
                 flxdiv.append(p1, p2);
@@ -46,6 +69,46 @@ fetch("http://localhost:3000/write")
             }
         })
     })
+
+
+    // fetch("http://localhost:3000/write")
+    // .then((resp) => resp.json())
+    // .then(data => {
+    //     data.forEach((element, i) => {
+    //         if (i < 3) {
+                
+    //            //2ci card
+    //            let card2 = document.createElement("div");
+    //             let pOne = document.createElement("p");
+    //             let pTwo = document.createElement("p");
+    //             let flxdiv2 = document.createElement("div");
+
+    //             flxdiv2.append(pOne,pTwo);
+    //             card2.append(flxdiv2,opacityDiv);
+    //             offersCards.append(card2);
+
+    //             card2.classList.add("box1", "animate__animated","animate__backInUp",);
+    //             flxdiv2.classList.add("flxdiv");
+    //             pOne.classList.add("bigP");
+    //             pTwo.classList.add("littleP");
+    //             opacityDiv.classList.add("elementor-background-overlay");
+
+    //             pOne.innerHTML = element.money;
+    //             pTwo.innerHTML = element.room;
+                
+    //             card2.style.backgroundImage =`url("${element.img}")`;
+
+
+
+
+            
+             
+
+
+
+    //         }
+    //     })
+    // })
 
     // window.addEventListener('scroll', function() {
     //     var scrollPosition = window.scrollY;

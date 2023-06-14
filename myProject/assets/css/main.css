@@ -335,6 +335,22 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   background-position: center center;
   position: relative;
 }
+.box1:hover .boxHover {
+  display: block;
+}
+.box1 .boxHover {
+  width: 100%;
+  height: 450px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  display: none;
+  background-color: transparent;
+  background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, #000000 100%);
+  opacity: 0.9;
+  transition: background-color 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: 7;
+}
 
 .flxdiv {
   position: absolute;
@@ -364,6 +380,36 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
 
 .littleP {
   font-size: 18px;
+}
+
+.bigTwoP {
+  font-size: 30px;
+}
+
+.littleTwoP {
+  font-size: 15px;
+}
+
+.flxdiv2 {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  z-index: 3;
+}
+
+.flxdiv:hover .littleTwoP::after {
+  content: "BOOK NOW";
+  display: block;
+  font-size: 15px;
+  color: #bd9035;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #BD9035;
 }
 
 .elementor-background-overlay {
@@ -442,7 +488,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #000000;
   margin-top: 150px;
 }
 .offers .cardOffers {
@@ -451,7 +496,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #000000;
 }
 .offers .cardOffers .offersCard {
   display: flex;
@@ -462,7 +506,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
 }
 .offers .cardOffers .check {
   font-size: 26px;
-  color: white;
 }
 .offers .cardOffers .check1 {
   font-size: 15px;
@@ -477,6 +520,97 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   gap: 30px;
   position: relative;
   margin-bottom: 100px;
+}
+
+.myGaleryContainer {
+  padding-top: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myGaleryContainer .myGalerySection {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.myGaleryContainer .myGalerySection .galery {
+  color: #BD9035;
+  font-size: 40px;
+}
+.myGaleryContainer .myGalerySection .view {
+  font-size: 26px;
+}
+.myGaleryContainer .myGalerySection .lorem {
+  font-size: 15px;
+  color: #b6b6b6;
+  text-align: center;
+}
+
+.adminContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.adminContainer form {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  margin-top: 120px;
+  color: white;
+}
+.adminContainer form #username {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+}
+.adminContainer form #password {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+}
+.adminContainer form #btnAdmin {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+}
+.adminContainer form .user {
+  font-size: 24px;
+}
+
+.admin_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin_container .admin_section {
+  width: 80%;
+}
+.admin_container .admin_section #admin_cards {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 * {

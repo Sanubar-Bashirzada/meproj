@@ -1,23 +1,41 @@
 {
-    "write": [
-      { 
-        "id": 1,
-        "money": "$85 / NIGHT",
-        "room": "Standard Room",
-        "img" : "./assets/imgs/1img.jpg"
-        
-     },
-     { 
-        "id": 2,
-        "money": "$199 / NIGHT",
-        "room": "Family Room",
-        "img":"./assets/imgs/2img.jpg"
-     },
-     { 
-        "id": 3,        
-        "money": "$240 / NIGHT",
-        "room": "Double Room",
-        "img":"./assets/imgs/3img.jpg"
-     }
-    ]
-  }
+  "write": [
+    {
+      "id": 1,
+      "money": "$85 / NIGHT",
+      "room": "Standard Room",
+      "honey": "Honeymoon Package",
+      "lorem": "Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod",
+      "img": "./assets/imgs/1img.jpg",
+      "img1": "./assets/imgs/offersimg1.jpg"
+    },
+    {
+      "id": 2,
+      "money": "$199 / NIGHT",
+      "room": "Family Room",
+      "honey": "Family Vacation – 30%",
+      "lorem": "Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod",
+      "img": "./assets/imgs/2img.jpg",
+      "img1": "./assets/imgs/offersimg2.jpg"
+    },
+    {
+      "id": 3,
+      "money": "$240 / NIGHT",
+      "room": "Double Room",
+      "honey": "Stay 4 Pay 3",
+      "lorem": "Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod",
+      "img": "./assets/imgs/3img.jpg",
+      "img1": "./assets/imgs/offersimg3.jpg"
+    },
+    {
+      "money": "Yoshio Molina",
+      "room": "Lang",
+      "id": 4
+    },
+    {
+      "money": "Yoshio Molina",
+      "room": "Lang",
+      "id": 5
+    }
+  ]
+}

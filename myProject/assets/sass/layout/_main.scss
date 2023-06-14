@@ -138,15 +138,38 @@
     background-position: center center;
     position: relative;
     
-    // &:hover{
-    
-    // }
+     &:hover{
+
+        .boxHover{
+            display: block;
+        }
+       
+     }
+
+     .boxHover{
+        width: 100%;
+        height: 450px;
+        border: 1px solid black;
+        position: absolute;
+        top: 0;
+        display: none;
+        background-color: transparent;
+        background-image: linear-gradient(360deg, #00000066 0%, #000000 100%);
+        opacity: 0.9;
+        transition: background-color 0.3s, border-radius 0.3s, opacity 0.3s;
+        z-index: 7;
+      
+     }
+
     //   transform: translateX(-50%);
      
       
     //   transition: 0.3s ease-out;
 }
-
+// .box1:hover{
+//   border: 3px solid red;
+    
+// }
 .flxdiv{
     position: absolute;
     bottom: 0;
@@ -176,6 +199,33 @@
 .littleP{
     font-size: 18px;
 }
+.bigTwoP{
+    font-size: 30px;
+}
+.littleTwoP{
+    font-size: 15px;
+}
+.flxdiv2{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    z-index: 3;
+   
+}
+.flxdiv:hover .littleTwoP::after {
+    content: "BOOK NOW";
+    display: block;
+    font-size: 15px;
+    color:#bd9035;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #BD9035;
+  }
 .elementor-background-overlay {
     background-color: transparent;
     background-image: linear-gradient(180deg, #00000066 0%, #000000 100%);
@@ -187,7 +237,6 @@
     left: 0;
     position: absolute;
 }
-
 .myComentContainer{
     width: 100%;
     display: flex;
@@ -260,7 +309,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #000000;
+    // background-color: #000000;
     margin-top: 150px;
     
     .cardOffers{
@@ -269,7 +318,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background-color: #000000;
+        // background-color: #000000;
 
         .offersCard{
             display: flex;
@@ -281,7 +330,7 @@
         }
         .check{
             font-size:26px ;
-            color: white;
+            // color: white;
         }
         .check1{
             font-size: 15px;
@@ -296,21 +345,117 @@
             gap: 30px;
             position: relative;
             margin-bottom: 100px;
-            // .card1{
-            //     width: 33%;
-            //     height: 450px;
-            //     border: 1px solid white;
-            //     // background-repeat: no-repeat;
-            //     // background-size: cover;
-            //     // background-position: center center;
-            //     // position: relative;
-            //     background-color: #fec302;
-            // }
+         
         }
 
 
     }
+
 }
+
+.myGaleryContainer{
+    padding-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .myGalerySection{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .galery{
+            color: #BD9035;
+            font-size: 40px;
+        }
+        .view{
+            font-size:26px ;
+        }
+        .lorem{
+            font-size: 15px;
+            color: #b6b6b6;
+            text-align: center;
+        }
+        
+        }
+    
+    }
+
+
+
+    //admin panel
+
+    .adminContainer{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    form{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        margin-top: 120px;
+        color: white;
+       
+       
+
+        #username{
+            width: 250px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+        }
+        #password{
+            width: 250px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+        }
+        #btnAdmin{
+            width: 80px;
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        .user{
+            font-size: 24px;
+        }
+    }
+    }
+
+    .admin_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .admin_section{
+            width: 80%;
+            #admin_cards{
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                position: relative;
+                margin-bottom: 100px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
 
 
 

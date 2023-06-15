@@ -349,7 +349,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, #000000 100%);
   opacity: 0.9;
   transition: background-color 0.3s, border-radius 0.3s, opacity 0.3s;
-  z-index: 7;
 }
 
 .flxdiv {
@@ -361,7 +360,7 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   flex-direction: column;
   gap: 20px;
   color: white;
-  z-index: 3;
+  z-index: 6;
 }
 
 .flxdiv:hover .bigP::after {
@@ -372,6 +371,7 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   border-width: 0px 0px 1px 0px;
   border-style: solid;
   border-color: #BD9035;
+  z-index: 6;
 }
 
 .bigP {
@@ -600,17 +600,66 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
 }
 .admin_container .admin_section {
   width: 80%;
+  margin-top: 60px;
 }
-.admin_container .admin_section #admin_cards {
-  margin-top: 30px;
+.admin_container .admin_section #money {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.admin_container .admin_section #room {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.admin_container .admin_section #img {
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.admin_container .admin_section #createBtn {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+.admin_container .admin_section #delete {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+.admin_container .admin_section #uptade {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+.admin_container .admin_section #more {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+.admin_container .admin_section .ourRoom {
+  margin-bottom: 10px;
+}
+
+.moreContainer {
   width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  position: relative;
-  margin-bottom: 100px;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+}
+.moreContainer #moreCard {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 * {

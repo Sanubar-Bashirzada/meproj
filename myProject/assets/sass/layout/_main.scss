@@ -707,13 +707,7 @@
 
 
 //spa page
-.spaheader{
-    background-image: url("./assets/imgs/hovuzspa.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-}
+
 .accordContainer{
     width: 100%;
     display: flex;
@@ -722,6 +716,20 @@
         padding-top: 100px;
         flex-direction: column;
         background-color: #f4f2ed;
+        margin-bottom: 0;
+        // .image2 {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     background-attachment: fixed;
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //      height: 600px;
+        //      width: 80% !important;
+        
+           
+        // }
     .accordSection{
         width: 80%;
         display: flex;
@@ -729,9 +737,16 @@
         align-items: center;
         flex-direction: column;
         background-color: #f4f2ed;
+        padding-bottom: 60px;
+        
+        .spawrite{
+            font-size: 35px;
+            color: #BD9035;
+            margin-bottom: 25px;
+        }
 
         .accordion:hover{
-            color: #fec302;
+            color: #BD9035;
         }
     }
 
@@ -741,39 +756,43 @@
 
     
 }
-.image1 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: cover;
-   
-    background-color:white;
-    height: 600px;
-    width: 80%;
+// .image1 {
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: cover;
+//     background-image: url("/assets/imgs/spaparalax.jpg");
+//     background-color:white;
+//     height: 600px;
+//     width: 100%;
     
  
 
-}
-.image2 {
-    background-image: url("/assets/imgs/spaparalax.jpg");
-    background-color: yellow;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-     height: 600px;
-     width: 100% !important;
-   
-}
+// }
+
 .image3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    width: 80%;
+    width: 100%;
     margin-bottom: 0;
+    margin: 0;
+    background-image: url("/assets/imgs/spaparalax.jpg");
    
 }
 
 
+
+.resContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .restInfo{
+        width: 80%;
+        color: red;
+    }
+}

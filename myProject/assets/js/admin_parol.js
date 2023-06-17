@@ -10,3 +10,12 @@ function login() {
       alert("Kullanıcı adı veya şifre yanlış!");
     }
   }
+
+
+
+const btnUp=document.getElementById("btnUp");
+const sign=document.createElement("a");
+sign.innerText="Sign Up";
+sign.href="sign.html";
+sign.target="_blank";
+btnUp.append(sign);

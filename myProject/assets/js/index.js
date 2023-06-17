@@ -69,7 +69,16 @@ fetch("http://localhost:3000/write")
         })
     })
 
+    // window.addEventListener("scroll", animateCard);
 
+    // function animateCard() {
+    //   var card = document.querySelectorAll("şbox1");
+    //   var cardPosition = card.getBoundingClientRect().top;
+    //   var screenPosition = window.innerHeight-780;
+    //  if (cardPosition < screenPosition) {
+    //     card.classList.add("show");
+    //   }
+    // }
     
 
     // window.addEventListener('scroll', function() {
@@ -176,6 +185,20 @@ fetch("http://localhost:3000/write")
     
     })
 
+
+    // var accordions = document.getElementsByClassName("accordion");
+
+    // for (var i = 0; i < accordions.length; i++) {
+    //     accordions[i].addEventListener("click", function() {
+    //         this.classList.toggle("active");
+    //         var panel = this.nextElementSibling;
+    //         if (panel.style.display === "block") {
+    //             panel.style.display = "none";
+    //         } else {
+    //             panel.style.display = "block";
+    //         }
+    //     });
+    // }
 
 
 

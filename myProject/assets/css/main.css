@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   display: flex;
   flex-direction: column;
@@ -993,10 +994,639 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .resContainer .restInfo {
   width: 80%;
-  color: red;
+}
+.resContainer .restInfo .therest {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  color: #BD9035;
+}
+.resContainer .restInfo .ledBy {
+  font-size: 16px;
+  color: #969292;
+  margin-top: 15px;
+}
+.resContainer .restInfo .hours {
+  font-size: 25px;
+  margin-top: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.resContainer .restInfo .breakHour {
+  font-size: 16px;
+  color: #969292;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.resContainer .restInfo .breakHour i {
+  color: #BD9035;
+}
+.resContainer .menyuRest {
+  width: 80%;
+  margin-top: 100px;
+  /* Aktif menü öğesi */
+  /* Menü içeriği */
+}
+.resContainer .menyuRest .titlerest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.resContainer .menyuRest .titlerest .rstrant {
+  font-size: 50px;
+  color: #BD9035;
+  margin-bottom: 50px;
+}
+.resContainer .menyuRest .menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.resContainer .menyuRest .menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.resContainer .menyuRest .menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 25px;
+}
+.resContainer .menyuRest .menu li.active a {
+  color: #BD9035;
+}
+.resContainer .menyuRest .menu-content {
+  display: none;
+  margin-top: 10px;
+}
+.resContainer .menyuRest .menu-content.active {
+  display: block;
+}
+.resContainer .menyuRest .menu-content p {
+  margin: 0;
+  padding: 10px 0;
+}
+.resContainer .menyuRest .men1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 60px;
+}
+.resContainer .menyuRest .mozarilla {
+  display: flex;
+  justify-content: space-between;
+}
+.resContainer .menyuRest .bottomWrite {
+  font-size: 16px;
+  color: #c1c1c1;
+}
+.resContainer .menyuRest .topWrite {
+  font-size: 25px;
+  color: #92734a;
+}
+.resContainer .menyuRest .moneyNum {
+  color: #c1c1c1;
+}
+.resContainer .menyuRest .lineline {
+  color: #92734a;
+}
+
+.teemContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.teemContainer .meetTeam {
+  font-size: 55px;
+  color: #BD9035;
+}
+.teemContainer .teemSection {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.teemContainer .maincontainer {
+  position: relative;
+  width: 350px;
+  height: 430px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.teemContainer .maincontainer .thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.teemContainer .maincontainer .thecard .thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/imgs/teem1.jpg");
+  color: #333;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+}
+.teemContainer .maincontainer .thecard .thefront .boxMenu {
+  position: absolute;
+  top: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  left: 115px;
+  margin: 0;
+}
+.teemContainer .maincontainer .thecard .thefront .boxMenu .nameGirl {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+.teemContainer .maincontainer .thecard .thefront .boxMenu .titleHuman {
+  color: #969292;
+}
+.teemContainer .maincontainer .thecard .theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.teemContainer .maincontainer .thecard .theback .lorem {
+  text-align: center;
+}
+.teemContainer .maincontainer .thecard .theback .about {
+  font-size: 25px;
+  font-weight: 550;
+}
+.teemContainer .maincontainer .thecard .theback .lineCard {
+  width: 200px;
+  height: 2px;
+  background-color: #BD9035;
+}
+.teemContainer .maincontainer .thecard .theback .sosialFoot {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.teemContainer .maincontainer .thecard .theback i {
+  font-size: 20px;
+}
+.teemContainer .maincontainer .thecard .theback i:hover {
+  color: #BD9035;
+}
+.teemContainer .maincontainer .thecard:hover {
+  transform: rotateY(180deg);
+}
+.teemContainer .maincontainer {
+  position: relative;
+  width: 350px;
+  height: 430px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.teemContainer .maincontainer .thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.teemContainer .maincontainer .thecard .thefront2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/imgs/teem2.jpg");
+  color: #333;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+}
+.teemContainer .maincontainer .thecard .thefront2 .boxMenu {
+  position: absolute;
+  top: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  left: 90px;
+  margin: 0;
+}
+.teemContainer .maincontainer .thecard .thefront2 .boxMenu .nameGirl {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+.teemContainer .maincontainer .thecard .thefront2 .boxMenu .titleHuman {
+  color: #969292;
+}
+.teemContainer .maincontainer .thecard .theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.teemContainer .maincontainer .thecard .theback .lorem {
+  text-align: center;
+}
+.teemContainer .maincontainer .thecard .theback .about {
+  font-size: 25px;
+  font-weight: 550;
+}
+.teemContainer .maincontainer .thecard .theback .lineCard {
+  width: 200px;
+  height: 2px;
+  background-color: #BD9035;
+}
+.teemContainer .maincontainer .thecard .theback .sosialFoot {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.teemContainer .maincontainer .thecard .theback i {
+  font-size: 20px;
+}
+.teemContainer .maincontainer .thecard .theback i:hover {
+  color: #BD9035;
+}
+.teemContainer .maincontainer .thecard:hover {
+  transform: rotateY(180deg);
+}
+.teemContainer .maincontainer {
+  position: relative;
+  width: 350px;
+  height: 430px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.teemContainer .maincontainer .thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teemContainer .maincontainer .thecard .thefront3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/imgs/teem3.jpg");
+  color: #333;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+}
+.teemContainer .maincontainer .thecard .thefront3 .boxMenu {
+  position: absolute;
+  top: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  left: 100px;
+  margin: 0;
+}
+.teemContainer .maincontainer .thecard .thefront3 .boxMenu .nameGirl {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teemContainer .maincontainer .thecard .thefront3 .boxMenu .titleHuman {
+  color: #969292;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teemContainer .maincontainer .thecard .theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.teemContainer .maincontainer .thecard .theback .lorem {
+  text-align: center;
+}
+.teemContainer .maincontainer .thecard .theback .about {
+  font-size: 25px;
+  font-weight: 550;
+}
+.teemContainer .maincontainer .thecard .theback .lineCard {
+  width: 200px;
+  height: 2px;
+  background-color: #BD9035;
+}
+.teemContainer .maincontainer .thecard .theback .sosialFoot {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.teemContainer .maincontainer .thecard .theback i {
+  font-size: 20px;
+}
+.teemContainer .maincontainer .thecard .theback i:hover {
+  color: #BD9035;
+}
+.teemContainer .maincontainer .thecard:hover {
+  transform: rotateY(180deg);
+}
+.teemContainer .maincontainer {
+  position: relative;
+  width: 350px;
+  height: 430px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.teemContainer .maincontainer .thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.teemContainer .maincontainer .thecard .thefront4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/imgs/teem4.jpg");
+  color: #333;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+}
+.teemContainer .maincontainer .thecard .thefront4 .boxMenu {
+  position: absolute;
+  top: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  left: 115px;
+  margin: 0;
+}
+.teemContainer .maincontainer .thecard .thefront4 .boxMenu .nameGirl {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+.teemContainer .maincontainer .thecard .thefront4 .boxMenu .titleHuman {
+  color: #969292;
+}
+.teemContainer .maincontainer .thecard .theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.teemContainer .maincontainer .thecard .theback .lorem {
+  text-align: center;
+}
+.teemContainer .maincontainer .thecard .theback .about {
+  font-size: 25px;
+  font-weight: 550;
+}
+.teemContainer .maincontainer .thecard .theback .lineCard {
+  width: 200px;
+  height: 2px;
+  background-color: #BD9035;
+}
+.teemContainer .maincontainer .thecard .theback .sosialFoot {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.teemContainer .maincontainer .thecard .theback i {
+  font-size: 20px;
+}
+.teemContainer .maincontainer .thecard .theback i:hover {
+  color: #BD9035;
+}
+.teemContainer .maincontainer .thecard:hover {
+  transform: rotateY(180deg);
+}
+.teemContainer .maincontainer {
+  position: relative;
+  width: 350px;
+  height: 430px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.teemContainer .maincontainer .thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.teemContainer .maincontainer .thecard .thefront5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/imgs/teem5.jpg");
+  color: #333;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+}
+.teemContainer .maincontainer .thecard .thefront5 .boxMenu {
+  position: absolute;
+  top: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  left: 115px;
+  margin: 0;
+}
+.teemContainer .maincontainer .thecard .thefront5 .boxMenu .nameGirl {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+.teemContainer .maincontainer .thecard .thefront5 .boxMenu .titleHuman {
+  color: #969292;
+}
+.teemContainer .maincontainer .thecard .theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.teemContainer .maincontainer .thecard .theback .lorem {
+  text-align: center;
+}
+.teemContainer .maincontainer .thecard .theback .about {
+  font-size: 25px;
+  font-weight: 550;
+}
+.teemContainer .maincontainer .thecard .theback .lineCard {
+  width: 200px;
+  height: 2px;
+  background-color: #BD9035;
+}
+.teemContainer .maincontainer .thecard .theback .sosialFoot {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.teemContainer .maincontainer .thecard .theback i {
+  font-size: 20px;
+}
+.teemContainer .maincontainer .thecard .theback i:hover {
+  color: #BD9035;
+}
+.teemContainer .maincontainer .thecard:hover {
+  transform: rotateY(180deg);
+}
+.teemContainer .maincontainer {
+  position: relative;
+  width: 350px;
+  height: 430px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.teemContainer .maincontainer .thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.teemContainer .maincontainer .thecard .thefront6 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("/assets/imgs/teem6.jpg");
+  color: #333;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+}
+.teemContainer .maincontainer .thecard .thefront6 .boxMenu {
+  position: absolute;
+  top: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  left: 80px;
+  margin: 0;
+}
+.teemContainer .maincontainer .thecard .thefront6 .boxMenu .nameGirl {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+.teemContainer .maincontainer .thecard .thefront6 .boxMenu .titleHuman {
+  color: #969292;
+}
+.teemContainer .maincontainer .thecard .theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #fafafa;
+  color: #333;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.teemContainer .maincontainer .thecard .theback .lorem {
+  text-align: center;
+}
+.teemContainer .maincontainer .thecard .theback .about {
+  font-size: 25px;
+  font-weight: 550;
+}
+.teemContainer .maincontainer .thecard .theback .lineCard {
+  width: 200px;
+  height: 2px;
+  background-color: #BD9035;
+}
+.teemContainer .maincontainer .thecard .theback .sosialFoot {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.teemContainer .maincontainer .thecard .theback i {
+  font-size: 20px;
+}
+.teemContainer .maincontainer .thecard .theback i:hover {
+  color: #BD9035;
+}
+.teemContainer .maincontainer .thecard:hover {
+  transform: rotateY(180deg);
 }
 
 * {

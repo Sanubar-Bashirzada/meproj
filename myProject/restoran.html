@@ -112,32 +112,275 @@
 
         <section class="restInfo">
 
-            <div></div>
-            <div>AN EXPERIENCE FOR THE SENSES</div>
-            <div>The Restaurant</div>
-            <div>Led by Chef de Micheal Martin, The Restaurant is celebrated for its excellent cuisine and unique ambience. The gorgeous dining room features three open studio kitchens, allowing you to enjoy the sights and sounds of the culinary artistry on display. The menu showcases both Asian and European influences, with a tempting selection of classic favorites and creative dishes for you to sample. Cheese connoisseurs will be drawn to the The Wine and Cheese Cellar, housed in five-meter-high glass walls, where our knowledgeable staff can introduce you to some of New York's greatest culinary treasures.</div>
-            <div>Hours</div>
+            <div class="therest">The Restaurant</div>
+            <div class="ledBy">Led by Chef de Micheal Martin, The Restaurant is celebrated for its excellent cuisine and unique ambience. The gorgeous dining room features three open studio kitchens, allowing you to enjoy the sights and sounds of the culinary artistry on display. The menu showcases both Asian and European influences, with a tempting selection of classic favorites and creative dishes for you to sample. Cheese connoisseurs will be drawn to the The Wine and Cheese Cellar, housed in five-meter-high glass walls, where our knowledgeable staff can introduce you to some of New York's greatest culinary treasures.</div>
+            <div class="hours">Hours</div>
 
-            <p>Breakfast: 7.00 am – 11.00 am (daily)</p>
-            <p>Lunch: 12.00 noon – 2.00 pm (daily)</p>
-            <p>Dinner: open from 6.30 pm, last order at 10.00 pm (daily)</p> 
+            <p class="breakHour"><i class="fa-solid fa-clock"></i>Breakfast: 7.00 am – 11.00 am (daily)</p>
+            <p class="breakHour"><i class="fa-solid fa-clock"></i>Lunch: 12.00 noon – 2.00 pm (daily)</p>
+            <p class="breakHour"><i class="fa-solid fa-clock"></i>Dinner: open from 6.30 pm, last order at 10.00 pm (daily)</p> 
 
         </section>
 
         <section class="menyuRest">
-            <p>LUXURY HOTEL</p>
-            <p>Restaurant Menu</p>
-            <div>
-                <div>
-                    <p>Breakfast</p>
-                    <p>Dessert</p>
-                    <p>Mains</p>
-                    <p>Salads</p>
-                </div>
-                <div>
+          <div class="titlerest">
 
-                </div>
-            </div>
+            <p class="rstrant">Restaurant Menu</p>
+
+          </div>
+            
+
+
+            <ul class="menu">
+              <li class="active"><a  onclick="showMenu(1)">Starters</a></li>
+              <li><a  onclick="showMenu(2)">Mains</a></li>
+              <li><a  onclick="showMenu(3)">Salads</a></li>
+              <li><a  onclick="showMenu(4)">Desserts</a></li>
+          </ul>
+      
+          <div id="menu1" class="menu-content active">
+              <div class="men1">
+      
+                  <div>
+                      <div class="mozarilla">
+                      <p class="topWrite"> Mozzarella Dippers</p>
+                  <p class="moneyNum">27$</p>
+                  </div>
+                  <div class="lineline">-------------------------------------------------------</div>
+                  <div class="bottomWrite">Fried mozzarella sticks, marinara sauce</div>
+      
+      
+                  <div class="mozarilla">
+                      <p class="topWrite"> Onion Rings</p>
+                  <p class="moneyNum">32$</p>
+                  </div>
+                  <div class="lineline">-------------------------------------------------------</div>
+                  <div class="bottomWrite">Fried onion rings, smoked aioli</div>
+      
+      
+                  <div class="mozarilla">
+                      <p class="topWrite">Fried Jalapeno</p>
+                  <p class="moneyNum">52$</p>
+                  </div>
+                  <div class="lineline">-------------------------------------------------------</div>
+                  <div class="bottomWrite">Fried jalapeno pickles, cheddar sauce</div>
+              </div>
+      
+              <div>
+                  <div class="mozarilla">
+                  <p class="topWrite">Buffalo Wings</p>
+              <p class="moneyNum">37$</p>
+              </div>
+              <div class="lineline">-------------------------------------------------------</div>
+              <div class="bottomWrite">Spicy chicken wings, blue cheese sauce, carrot, celery</div>
+      
+      
+              <div class="mozarilla">
+                  <p class="topWrite"> Chilli Con Carne</p>
+              <p class="moneyNum">32$</p>
+              </div>
+              <div  class="lineline">-------------------------------------------------------</div>
+              <div class="bottomWrite">Spicy ground beef, bacon, kidney beans</div>
+      
+      
+              <div class="mozarilla">
+                  <p class="topWrite">Potato Skins</p>
+              <p class="moneyNum">42$</p>
+              </div>
+              <div  class="lineline">-------------------------------------------------------</div>
+              <div class="bottomWrite">Crispy potato skins; bacon & cheddar or vegetables</div>
+          </div>
+                  
+      
+      
+                  
+      
+                  
+                 </div>
+              
+          </div>
+      
+          <div id="menu2" class="menu-content">
+              <div class="men1">
+                  <div>
+                      <div class="mozarilla">
+                      <p class="topWrite" > Rusty’s Burger</p>
+                  <p  class="moneyNum">27$</p>
+                  </div>
+                  <div class="lineline">-------------------------------------------------------</div>
+                  <div  class="bottomWrite">Smoked pulled beef ribs, bbq sauce, cheddar, crispy onion</div>
+      
+      
+                  <div class="mozarilla">
+                      <p  class="topWrite"> Cajun Fish Steak</p>
+                  <p  class="moneyNum">32$</p>
+                  </div>
+                  <div  class="lineline">-------------------------------------------------------</div>
+                  <div  class="bottomWrite">Cajun spicied seabass, deep fried baby potatoes, side salad</div>
+      
+      
+                  <div class="mozarilla">
+                      <p  class="topWrite">Southern Fried Chicken</p>
+                  <p  class="moneyNum">52$</p>
+                  </div>
+                  <div class="lineline">-------------------------------------------------------</div>
+                  <div  class="bottomWrite">Cajun coated chicken breast, fries and honey mustard</div>
+              </div>
+      
+              <div>
+                  <div class="mozarilla">
+                  <p  class="topWrite">Crab Cake</p>
+              <p class="moneyNum">37$</p>
+              </div>
+              <div class="lineline">-------------------------------------------------------</div>
+              <div  class="bottomWrite">Breaded crab cakes, tartar sauce, apple and fennel salad</div>
+      
+      
+              <div class="mozarilla">
+                  <p  class="topWrite">Baby Back Ribs</p>
+              <p class="moneyNum">32$</p>
+              </div>
+              <div class="lineline">-------------------------------------------------------</div>
+              <div class="bottomWrite">Bbq glazed baby pork ribs, coleslaw, fries</div>
+      
+      
+              <div class="mozarilla">
+                  <p  class="topWrite">Smokehouse Combo</p>
+              <p class="moneyNum">42$</p>
+              </div>
+              <div  class="lineline">-------------------------------------------------------</div>
+              <div  class="bottomWrite">Smoked beef brisket, rib and sausage, coleslaw, cornbread</div>
+          </div>
+                  
+      
+      
+                  
+      
+                  
+                 </div>
+          </div>
+      
+          <div id="menu3" class="menu-content">
+              <div class="men1">
+                  <div>
+                      <div class="mozarilla">
+                      <p class="topWrite"> Ceaser Salad/p>
+                  <p class="moneyNum">47$</p>
+                  </div>
+                  <div  class="lineline">-------------------------------------------------------</div>
+                  <div class="bottomWrite">Romaine lettuce, croutons, parmigiano, Ceaser dressing.</div>
+      
+      
+                  <div class="mozarilla">
+                      <p  class="topWrite"> Waldorf Salad</p>
+                  <p  class="moneyNum">52$</p>
+                  </div>
+                  <div  class="lineline">-------------------------------------------------------</div>
+                  <div class="bottomWrite">Lettuce, celery, apple, grape, walnut, waldorf sauce</div>
+      
+      
+                  <div class="mozarilla">
+                      <p  class="topWrite">Quinoa & Avocado Salad</p>
+                  <p  class="moneyNum">52$</p>
+                  </div>
+                  <div  class="lineline">-------------------------------------------------------</div>
+                  <div class="bottomWrite">Quinoa, avocado, mixed greens. Nuts, dried and fresh fruits</div>
+              </div>
+      
+              <div>
+                  <div class="mozarilla">
+                  <p  class="topWrite">Grilled Salmon Salad</p>
+              <p class="moneyNum">37$</p>
+              </div>
+              <div  class="lineline">-------------------------------------------------------</div>
+              <div class="bottomWrite">Grilled salmon, mixed greens, capers, orange slices</div>
+      
+      
+              <div class="mozarilla">
+                  <p  class="topWrite">Chicken Cobb Salad</p>
+              <p class="moneyNum">32$</p>
+              </div>
+              <div class="lineline">-------------------------------------------------------</div>
+              <div class="bottomWrite">Iceberg lettuce, cherry tomatoes, blue cheese, avocado, bacon</div>
+      
+      
+              <div class="mozarilla">
+                  <p class="topWrite">Salad Chicken</p>
+              <p  class="moneyNum">42$</p>
+              </div>
+              <div class="lineline">-------------------------------------------------------</div>
+              <div class="bottomWrite">Ceaser dressing. Optional grilled chicken breast</div>
+          </div>
+                  
+      
+      
+                  
+      
+                  
+                 </div>
+          </div>
+      
+          <div id="menu4" class="menu-content">
+              <div class="men1">
+                  <div>
+                      <div class="mozarilla">
+                      <p class="topWrite">Bourbon Pecan Pie</p>
+                  <p  class="moneyNum">67$</p>
+                  </div>
+                  <div class="lineline">-------------------------------------------------------</div>
+                  <div  class="bottomWrite">Bourbon pecan stuffed pie, vanilla ice-cream</div>
+      
+      
+                  <div class="mozarilla">
+                      <p class="topWrite">New York Cheesecake</p>
+                  <p class="moneyNum">50$</p>
+                  </div>
+                  <div class="lineline">-------------------------------------------------------</div>
+                  <div  class="bottomWrite">Cheesecake, strawberry & lime salad</div>
+      
+      
+                  <div class="mozarilla">
+                      <p class="topWrite">Rusty’s ice-cream</p>
+                  <p class="moneyNum">32$</p>
+                  </div>
+                  <div  class="lineline">-------------------------------------------------------</div>
+                  <div class="bottomWrite">Vanilla, bourbon, cookie, chocolate ice-cream</div>
+              </div>
+      
+              <div>
+                  <div class="mozarilla">
+                  <p class="topWrite">S’mores</p>
+              <p class="moneyNum">40$</p>
+              </div>
+              <div  class="lineline">-------------------------------------------------------</div>
+              <div class="bottomWrite">Chocolate chip cookies, marshmallow, chocolate</div>
+      
+      
+              <div class="mozarilla">
+                  <p class="topWrite">Rocky Road</p>
+              <p class="moneyNum">42$</p>
+              </div>
+              <div class="lineline">-------------------------------------------------------</div>
+              <div  class="bottomWrite">Chocolate, marshmallow, biscuit bar</div>
+      
+      
+              <div class="mozarilla">
+                  <p  class="topWrite">Apple & Pear Crumble</p>
+              <p class="moneyNum">42$</p>
+              </div>
+              <div class="lineline">-------------------------------------------------------</div>
+              <div  class="bottomWrite">Caramelized pear and apple, oat crumble, vanilla ice-cream</div>
+          </div>
+                  
+      
+      
+                  
+      
+                  
+                 </div>
+          </div>
+      
+          
 
         </section>
 

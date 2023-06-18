@@ -201,6 +201,21 @@ fetch("http://localhost:3000/write")
     // }
 
 
+    function showMenu(menuNumber) {
+        var menuItems = document.getElementsByClassName("menu")[0].getElementsByTagName("li");
+        for (var i = 0; i < menuItems.length; i++) {
+            menuItems[i].classList.remove("active");
+        }
+        menuItems[menuNumber - 1].classList.add("active");
+
+       
+        var menuContents = document.getElementsByClassName("menu-content");
+        for (var j = 0; j < menuContents.length; j++) {
+            menuContents[j].classList.remove("active");
+        }
+        document.getElementById("menu" + menuNumber).classList.add("active");
+    }
+
 
 
   

@@ -8,6 +8,8 @@ closeBtn.addEventListener("click", function () {
     responsive.classList.remove("addResp")
 })
 
+
+
 const cards = document.getElementById("cards");
 const offersCards= document.getElementById("offersCards");
 
@@ -15,11 +17,12 @@ fetch("http://localhost:3000/write")
     .then((resp) => resp.json())
     .then(data => {
         data.forEach((element, i) => {
-            if (i < 3) {
+            if (i < 5) {
                 let card1 = document.createElement("div");
                 let boxhover = document.createElement("div");
                 let p1 = document.createElement("p");
                 let p2 = document.createElement("p");
+               
                 let flxdiv = document.createElement("div");
                 let opacityDiv=document.createElement("div");
                 let opacityDiv2=document.createElement("div");
@@ -33,7 +36,7 @@ fetch("http://localhost:3000/write")
 
                 p1.innerHTML = element.money;
                 p2.innerHTML = element.room;
-
+                
                 card1.style.backgroundImage =`url("${element.img}")`;
 
                 flxdiv.append(p1, p2);
@@ -80,6 +83,7 @@ fetch("http://localhost:3000/write")
     //   }
     // }
     
+
 
     // window.addEventListener('scroll', function() {
     //     var scrollPosition = window.scrollY;
@@ -216,8 +220,7 @@ fetch("http://localhost:3000/write")
         document.getElementById("menu" + menuNumber).classList.add("active");
     }
 
-
-
+   
   
 
 

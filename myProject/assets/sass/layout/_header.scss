@@ -115,7 +115,7 @@ header {
 
     #responsive {
         width: 100% ;
-        height: 100% ;
+        height: 600px;
         position: absolute;
         overflow: hidden;
         transition: 600ms;
@@ -126,6 +126,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        top: 0;
 
       
        
@@ -273,4 +274,172 @@ a {
     background-size: cover;
     width: 100%;
     height: 700px;
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .navContent {
+            display: flex;
+            width: 80%;
+            position: absolute;
+            top: 0;
+            margin-top: 20px;
+
+            .navMenu {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    gap: 10px;
+
+                    i {
+                        color: white;
+
+
+                    }
+
+
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding-bottom: 10px;
+                    font-size: 18px;
+
+                }
+
+                a:hover {
+                    border-width: 0px 0px 1px 0px;
+                    color: #BD9035;
+                    border-style: solid;
+                    border-color: #BD9035;
+
+
+                }
+
+                .myBtn {
+                    width: 150px;
+                    height: 50px;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    color: white;
+
+                }
+
+                .myBtn:hover {
+
+                    background-color: white;
+                    color: black;
+                }
+
+               
+              
+
+               
+            }
+
+        }
+
+        .elementor-background-overlay {
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #000000 0%, #00000000 71%);
+            opacity: 1;
+            transition: background-color 0.3s, border-radius 0.3s, opacity 0.3s;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+    }
+
+    .text{
+        position: absolute;
+        top: 400px;
+        left: 100px;
+
+        .ubud{
+            font-size: 24px;
+            color: white;
+        }
+        .luxury{
+            font-size: 80px;
+            color: white;
+            font-weight: 600;
+        }
+    }
+
+
+    #responsive {
+        width: 100% ;
+        height: 100% ;
+        position: absolute;
+        overflow: hidden;
+        transition: 600ms;
+        z-index: 7;
+        background-color:white;
+        transform: translateX(1500px);
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+      
+       
+        &.addResp {
+            transform: translateX(0px);
+        
+            
+        }
+        li {
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+        
+        }
+        
+        a {
+            text-decoration: none;
+            padding-bottom: 10px;
+            font-size: 18px;
+            color: #000000;
+            font-weight: 500;
+        
+        }
+        a:hover {
+            border-width: 0px 0px 1px 0px;
+            color: #BD9035;
+            border-style: solid;
+            border-color: #BD9035;
+
+        }
+        #closeBtn{
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+        .myBtn{
+            width: 120px;
+            height: 40px;
+            background-color: transparent;
+            border: 1px solid black;
+            color: black;
+        }
+    }
+
+
+    #bar {
+        display: none;
+    }
+
 }

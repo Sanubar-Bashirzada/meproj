@@ -1,32 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+
+
+        <style>
+            .myContainer{
+                width: 100%;
+                background-image: url("./assets/imgs/formimg.jpg");
+                position: relative;
+                height: 700px;
+                padding-top: 50px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                padding-bottom: 30px;
+            }
+           
+           
+    
+            .container {
+                max-width: 400px;
+                padding: 20px;
+                background-color:#f8f5f0;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+               
+                 
+               
+            }
+    
+            h1 {
+                text-align: center;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+    
+            input[type="date"],
+            select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+    
+            input[type="button"] {
+                width: 100%;
+                padding: 10px;
+                background-color:#aa8453;
+                color: #ffffff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-top: 50px;
+            }
+    
+            input[type="button"]:hover {
+                background-color: black ;
+            }
+            #adults{
+                margin-bottom: 10px; 
+            }
+            #children{
+                margin-bottom: 10px;
+            }
+            .check{
+                font-size: 24px;
+                font-weight: 450;
+            }
+            .eachOf{
+
+                color: white;
+                font-size: 30px;
+                
+            }
+            .rezerv{
+                margin-left: 35px;
+                margin-top: 60px;
+
+            }
+            .resWrite{
+                font-size: 28px;
+                color: white;
+            }
+            .tel{
+                font-size: 35px;
+                color: white;
+                margin-right: 10px;
+            }
+            .numberrezerv{
+                font-size: 25px;
+                color: white;
+            }
+        </style>
+       
+    </head>
+    <body>
+         <!-- header start -->
+
+  <header>
+
+    <nav>
+
+      <video width="100%" height="100%" autoplay loop playsinline controls>
+        <source src="./assets/videos/myVideo.mp4" type="video/mp4">
+
+      </video>
+      <div class="elementor-background-overlay"></div>
+
+      <div class="navContent">
+
         <div>
-            <div>
-                <label for=""></label>
-
-                <input type="date" id="day"  name="dateDay">
-
-            </div>
-            <div>
-                <label for=""></label>
-
-                <input type="date" id="day" name="dateDay">
-
-            </div>
-            
+          <img src="https://kit.baliniz.com/luxetta/wp-content/uploads/sites/44/2022/10/logo-luxetta.png" width="70%"
+            alt="">
         </div>
+
+
+        <ul id="navmenu" class="navMenu">
+          <li><a href="index.html">HOME</a></li>
+
+
+          <li><a href="room.html">ROOM</a> </li>
+
+
+          <li><a href="offers.html">OFFERS</a></li>
+
+          <li> <a href="restoran.html">RESTAURANT</a></li>
+
+
+          <li> <a href="spa.html">SPA</a></li>
+
+
+
+          <li><a href="teem.html">TEAM</a> </li>
+
+
+
+          <li><a href="contact.html">CONTACT</a></li>
+
+          <li> <button class="myBtn"><a href="bookNow.html">BOOK NOW</a></button></li>
+
+          <li><a href="admin_parol.html"><i class="fa-solid fa-user"></i></a></li>
+
+        </ul>
+
+
         <div>
-
+          <i id="bar" class="fa-solid fa-bars"></i>
         </div>
+
+      </div>
+
+    </nav>
+
+    <div class="text">
+      <p class="ubud"> UBUD, BALI - INDONESIA</p>
+      <p class="luxury">Luxury Hotel <br> And Resort</p>
+
     </div>
 
+    <ul id="responsive">
+        <li class="flx">
+          <img src="	https://kit.baliniz.com/luxetta/wp-content/uploads/sites/44/2022/10/logo-luxetta-black.png"
+            width="20%" style="margin-top:10px;" alt="">
+          <i id="closeBtn" class="fa fa-times" aria-hidden="true"></i>
+  
+        </li>
+        <li><a href="index.html">HOME</a></li>
+  
+  
+        <li><a href="room.html">ROOM</a> </li>
+  
+  
+        <li><a href="offers.html">OFFERS</a></li>
+  
+        <li> <a href="restoran.html">RESTAURANT</a></li>
+  
+  
+        <li> <a href="spa.html">SPA</a></li>
+  
+  
+  
+        <li><a href="teem.html">TEAM</a> </li>
+  
+  
+  
+        <li><a href="contact.html">CONTACT</a></li>
+        <li> <button class="myBtn"><a href="bookNow.html">BOOK NOW</a></button></li>
+  
+        <li><a href="admin_parol.html"><i class="fa-solid fa-user"></i></a></li>
+  
+      </ul>
+
+  </header>
+
+  <!-- header end -->
+        <div class="myContainer">
+             <div class="rezerv">
+                <p class="eachOf">Each of our guest rooms feature a private <br> bath, wi-fi, cable television and include <br>full breakfast.</p>
+                <p class="resWrite">Reservation</p>
+                <p class="numberrezerv"><i class="tel fa-solid fa-phone"></i>855 100 4444</p>
+             </div>
+
+            <div class="container">
+               
+                <h1>Hotel Booking Form</h1>
+                <form>
+                  
+                    <label class="check" for="checkIn">Check-in</label>
+                    <input type="date" id="checkIn" name="checkIn" placeholder="hh">
+        
+                    <label class="check" for="checkOut">Check-out</label>
+                    <input type="date" id="checkOut" name="checkOut">
+        
+                    <label class="check" for="adults">Adults</label>
+                    <select id="adults" name="adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+        
+                    <label class="check" for="children">Children</label>
+                    <select id="children" name="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+        
+                    <input type="button" value="Submit" onclick="saveForm()">
+                </form>
+            </div>
+        </div>
+      
+         <!-- footer start -->
+ 
+
+ <footer>
+    <div class="footerDiv">
+      <div class="oneBox">
+        <div class="imgFoot"> <img src="https://kit.baliniz.com/luxetta/wp-content/uploads/sites/44/2022/10/logo-luxetta.png"
+            width="30%" alt=""></div>
+        <div class="subsBox">
+          <p>Subscribe Our Newsletter</p>
+          <div class="inputBtn">
+            <input class="emailinput" type="text" placeholder="YOUR EMAIL ADRESS">
+            <button>SUBSCRIBE</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footLine"></div>
+
+      <div class="twoBox">
+        <p>HOTEL</p>
+        <p>EXPERIENCES</p>
+        <p>SPECIAL OFFERS</p>
+        <p>ACCOMMODATIONS</p>
+        <p>OUR ROOMS</p>
+      </div>
+      <div class="footLine"></div>
+
+      <div class="threeBox">
+        <div class="condactDiv">
+          <p>Contact Details</p>
+          <p>Connect With Us</p>
+        </div>
+        <div class="fourBox">
+          <div class="iconFoot">
+            <p class="iconP"><i class="fa-solid fa-location-dot"></i>Jl. Raya Ubud No.25, Bali</p>
+            <p class="iconP"><i class="fa-solid fa-envelope"></i>support@domain.com</p>
+            <p class="iconP"><i class="fa-solid fa-phone"></i>(+021) 115 228 33</p>
+          </div>
+          <div class="sosialFoot">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div class="footLine"></div>
+        <div class="fiveBox">
+          <div class="copyFoot">Copyright © 2022 Baliniz. All rights reserved.</div>
+
+
+
+          <div class="rightFoot">
+            <div> Privacy Policy</div>
+            <div class="lineShort"></div>
+            <div>Term Of Service</div>
+            <div class="lineShort"></div>
+            <div>Credits</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer> 
+
+  <!-- footer end -->
+
+        <script>
+            function saveForm() {
+                var checkIn = document.getElementById('checkIn').value;
+                var checkOut = document.getElementById('checkOut').value;
+                var adults = document.getElementById('adults').value;
+                var children = document.getElementById('children').value;
     
-</body>
-</html>
+                localStorage.setItem('checkIn', checkIn);
+                localStorage.setItem('checkOut', checkOut);
+                localStorage.setItem('adults', adults);
+                localStorage.setItem('children', children);
+    
+                alert('Form başarıyla kaydedildi.');
+            }
+        </script>
+
+        <script src="./assets/js/index.js"></script>
+    </body>
+    </html>
+    
+
+
+
+ 

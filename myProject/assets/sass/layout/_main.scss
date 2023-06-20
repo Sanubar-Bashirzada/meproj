@@ -261,7 +261,6 @@
 .box1 {
     width: 350px;
     height: 450px;
-    border: 1px solid black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -633,6 +632,10 @@
     .admin_section {
         width: 80%;
         margin-top: 60px;
+        background-color: #f8f5f0;
+        height: 300px;
+        padding: 30px;
+        border-radius: 5px;
 
         #money {
             width: 200px;
@@ -724,6 +727,7 @@
             font-size: 40px;
         }
     }
+   
 }
 
 .moreContainer {
@@ -814,7 +818,7 @@
 
 }
 
-
+//restoran page 
 
 .resContainer {
     width: 100%;
@@ -956,6 +960,19 @@
         }
     }
 }
+ //restoran page responsiv
+@media screen and (max-width: 768px) {
+    .men1 {
+         flex-direction: column;
+     }
+     .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+    }
+
+    //team page
 
 .teemContainer {
     width: 100%;
@@ -1002,7 +1019,7 @@
                 color: #333;
                 background-repeat: no-repeat;
                 background-size: contain;
-                border: 1px solid black;
+             
 
                 .boxMenu {
                     position: absolute;
@@ -1102,8 +1119,7 @@
                 color: #333;
                 background-repeat: no-repeat;
                 background-size: contain;
-                border: 1px solid black;
-
+               
                 .boxMenu {
                     position: absolute;
                     top: 350px;
@@ -1205,7 +1221,7 @@
                 color: #333;
                 background-repeat: no-repeat;
                 background-size: contain;
-                border: 1px solid black;
+               
 
                 .boxMenu {
                     position: absolute;
@@ -1312,8 +1328,7 @@
                 color: #333;
                 background-repeat: no-repeat;
                 background-size: contain;
-                border: 1px solid black;
-
+              
                 .boxMenu {
                     position: absolute;
                     top: 350px;
@@ -1412,7 +1427,7 @@
                 color: #333;
                 background-repeat: no-repeat;
                 background-size: contain;
-                border: 1px solid black;
+                
 
                 .boxMenu {
                     position: absolute;
@@ -1512,7 +1527,7 @@
                 color: #333;
                 background-repeat: no-repeat;
                 background-size: contain;
-                border: 1px solid black;
+               
                 .boxMenu{
                     position: absolute;
                     top: 350px;
@@ -1579,3 +1594,41 @@
         }
     }
 }
+
+//team page responsiv
+
+@media screen and (max-width: 768px) {
+    .teemSection {
+         flex-direction: column;
+     }
+    
+    }
+
+.contactCotainer{
+    width: 100%;
+    .mapSection{
+        width: 100%;
+        .mapBox{
+
+            filter: grayscale(100%);
+        } 
+    
+    }
+}
+
+
+.text2{
+    position: absolute;
+    top: 150px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .myContainer {
+         flex-direction: column;
+     }
+     .rezerv{
+        display: none;
+     }
+    
+    }

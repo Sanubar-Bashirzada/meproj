@@ -1,5 +1,13 @@
 // const admin_container=document.getElementById("admin_container");
-
+const bar = document.getElementById("bar");
+const responsive = document.getElementById("responsive");
+const closeBtn = document.getElementById("closeBtn")
+bar.addEventListener("click", function () {
+    responsive.classList.toggle("addResp");
+})
+closeBtn.addEventListener("click", function () {
+    responsive.classList.remove("addResp")
+})
 //post start
 const createBtn=document.getElementById("createBtn");
 createBtn.addEventListener("click", function() {
@@ -43,7 +51,7 @@ createBtn.addEventListener("click", function() {
 const deleteBtn=document.getElementById("delete");
 deleteBtn.addEventListener("click", function(){
 
-    fetch("http://localhost:3000/write", {
+    fetch("http://localhost:3000/write/4", {
     method: "DELETE"
 })
 .then((resp)=>resp.json())

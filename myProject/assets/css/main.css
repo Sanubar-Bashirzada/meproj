@@ -86,7 +86,7 @@ header .text .luxury {
 }
 header #responsive {
   width: 100%;
-  height: 100%;
+  height: 600px;
   position: absolute;
   overflow: hidden;
   transition: 600ms;
@@ -97,6 +97,7 @@ header #responsive {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  top: 0;
 }
 header #responsive.addResp {
   transform: translateX(0px);
@@ -214,6 +215,132 @@ a {
   background-size: cover;
   width: 100%;
   height: 700px;
+}
+.restoranHeader nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.restoranHeader nav .navContent {
+  display: flex;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  margin-top: 20px;
+}
+.restoranHeader nav .navContent .navMenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.restoranHeader nav .navContent .navMenu li {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+.restoranHeader nav .navContent .navMenu li i {
+  color: white;
+}
+.restoranHeader nav .navContent .navMenu a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.restoranHeader nav .navContent .navMenu a:hover {
+  border-width: 0px 0px 1px 0px;
+  color: #BD9035;
+  border-style: solid;
+  border-color: #BD9035;
+}
+.restoranHeader nav .navContent .navMenu .myBtn {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.restoranHeader nav .navContent .navMenu .myBtn:hover {
+  background-color: white;
+  color: black;
+}
+.restoranHeader nav .elementor-background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 71%);
+  opacity: 1;
+  transition: background-color 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.restoranHeader .text {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+.restoranHeader .text .ubud {
+  font-size: 24px;
+  color: white;
+}
+.restoranHeader .text .luxury {
+  font-size: 80px;
+  color: white;
+  font-weight: 600;
+}
+.restoranHeader #responsive {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  transition: 600ms;
+  z-index: 7;
+  background-color: white;
+  transform: translateX(1500px);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.restoranHeader #responsive.addResp {
+  transform: translateX(0px);
+}
+.restoranHeader #responsive li {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+.restoranHeader #responsive a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+}
+.restoranHeader #responsive a:hover {
+  border-width: 0px 0px 1px 0px;
+  color: #BD9035;
+  border-style: solid;
+  border-color: #BD9035;
+}
+.restoranHeader #responsive #closeBtn {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.restoranHeader #responsive .myBtn {
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+.restoranHeader #bar {
+  display: none;
 }
 
 footer {
@@ -552,7 +679,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
 .box1 {
   width: 350px;
   height: 450px;
-  border: 1px solid black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -841,6 +967,10 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
 .admin_container .admin_section {
   width: 80%;
   margin-top: 60px;
+  background-color: #f8f5f0;
+  height: 300px;
+  padding: 30px;
+  border-radius: 5px;
 }
 .admin_container .admin_section #money {
   width: 200px;
@@ -1107,6 +1237,16 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   color: #92734a;
 }
 
+@media screen and (max-width: 768px) {
+  .men1 {
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .teemContainer {
   width: 100%;
   display: flex;
@@ -1149,7 +1289,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   color: #333;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid black;
 }
 .teemContainer .maincontainer .thecard .thefront .boxMenu {
   position: absolute;
@@ -1231,7 +1370,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   color: #333;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid black;
 }
 .teemContainer .maincontainer .thecard .thefront2 .boxMenu {
   position: absolute;
@@ -1316,7 +1454,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   color: #333;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid black;
 }
 .teemContainer .maincontainer .thecard .thefront3 .boxMenu {
   position: absolute;
@@ -1405,7 +1542,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   color: #333;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid black;
 }
 .teemContainer .maincontainer .thecard .thefront4 .boxMenu {
   position: absolute;
@@ -1487,7 +1623,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   color: #333;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid black;
 }
 .teemContainer .maincontainer .thecard .thefront5 .boxMenu {
   position: absolute;
@@ -1569,7 +1704,6 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   color: #333;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1px solid black;
 }
 .teemContainer .maincontainer .thecard .thefront6 .boxMenu {
   position: absolute;
@@ -1629,6 +1763,34 @@ footer .footerDiv .fiveBox .rightFoot .lineShort {
   transform: rotateY(180deg);
 }
 
+@media screen and (max-width: 768px) {
+  .teemSection {
+    flex-direction: column;
+  }
+}
+.contactCotainer {
+  width: 100%;
+}
+.contactCotainer .mapSection {
+  width: 100%;
+}
+.contactCotainer .mapSection .mapBox {
+  filter: grayscale(100%);
+}
+
+.text2 {
+  position: absolute;
+  top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .myContainer {
+    flex-direction: column;
+  }
+  .rezerv {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;

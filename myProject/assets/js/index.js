@@ -17,7 +17,7 @@ fetch("http://localhost:3000/write")
     .then((resp) => resp.json())
     .then(data => {
         data.forEach((element, i) => {
-            if (i < 5) {
+            if (i < 3) {
                 let card1 = document.createElement("div");
                 let boxhover = document.createElement("div");
                 let p1 = document.createElement("p");
